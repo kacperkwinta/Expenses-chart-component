@@ -1,13 +1,20 @@
+// Define a function that creates a chart using data passed as an argument.
 function createChart(data) {
+	// Extract an array of labels from the data array using the `map` method.
 	var labels = data.map(function (item) {
 		return item.day;
 	});
+	// Extract an array of values from the data array using the `map` method.
 	var values = data.map(function (item) {
 		return item.amount;
 	});
+	// Get a reference to the canvas element.
 	var ctx = document.getElementById("myChart").getContext("2d");
+	// Create a new chart using the Chart.js library.
 	var myChart = new Chart(ctx, {
+		// Set the chart type to bar chart.
 		type: "bar",
+		// Set the chart data using the extracted labels and values.
 		data: {
 			labels: labels,
 			datasets: [
@@ -21,6 +28,7 @@ function createChart(data) {
 				},
 			],
 		},
+		// Configure the chart options, such as the scales, tooltip, and legend.
 		options: {
 			scales: {
 				display: false,
@@ -47,6 +55,7 @@ function createChart(data) {
 	});
 }
 
+// Fetch data from a JSON file and use it to create a chart.
 fetch("data.json")
 	.then((response) => response.json())
 	.then((data) => {
