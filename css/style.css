@@ -18,16 +18,87 @@ main {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 header {
   padding: 2.4rem;
-  border-radius: 1rem;
-  background-color: #ec775f; }
+  width: 45rem;
+  border-radius: 2rem;
+  background-color: #ec775f;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #fffaf5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem; }
+  header span {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; }
+  header img {
+    justify-self: end;
+    align-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2; }
+  header p {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 700; }
 
 article {
-  max-width: 45rem;
-  margin: 0 auto;
-  border-radius: 1rem;
   padding: 2.4rem;
+  width: 45rem;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #fffaf5; }
+  article h1 {
+    margin-bottom: 4.8rem;
+    color: #382314; }
+  article .month-spending {
+    margin-bottom: 2.4rem; }
+
+.month-details {
+  border-top: 1px solid #f8e9dd;
+  padding-top: 2.4rem;
+  padding-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .month-details > span {
+    font-size: 1.5rem;
+    color: #93867b; }
+  .month-details .spending {
+    color: #382314;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: end; }
+  .month-details .stats-percent {
+    color: #382314;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: end; }
+  .month-details .stats-period {
+    font-size: 1.5rem;
+    color: #93867b;
+    grid-column: 2 / 3;
+    grid-row: 3 / -1;
+    align-self: end;
+    justify-self: end; }
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%; }
+  main {
+    height: auto;
+    margin: 4.8em auto; }
+  header {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2.4rem; }
+  article {
+    width: 90%;
+    margin: 0 auto; } }
