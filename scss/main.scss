@@ -1,0 +1,25 @@
+// COLORS
+$color-primary-1: hsl(10, 79%, 65%);
+$color-primary-2: hsl(186, 34%, 60%);
+
+$color-neutral-1: hsl(25, 47%, 15%);
+$color-neutral-2: hsl(28, 10%, 53%);
+$color-neutral-3: hsl(27, 66%, 92%);
+$color-neutral-4: hsl(33, 100%, 98%);
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.8rem;
+}
