@@ -13,5 +13,5 @@
 
 ### Links 🌐
 
-- Live Site URL 🔴: [click!](https://kacperkwinta.github.io/Fylo-data-storage-component/)
+- Live Site URL 🔴: [click!](https://kacperkwinta.github.io/Expenses-chart-component/)
 - My Frontend Mentor profile 👦: [click!](https://www.frontendmentor.io/profile/kacperkwinta)
